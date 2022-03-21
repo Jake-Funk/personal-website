@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Hurricane&family=Roboto&display=swap');
+
+.darkTheme {
+    --BackgroundPrimary: hsl(250, 13%, 9%);
+    --FontColor: hsl(194, 20%, 70%);
+    --FontHeaderColor: hsl(0, 0%, 100%);
+    --AccentColor: hsl(136, 36%, 47%);
+}
+
+.lightTheme {
+    --BackgroundPrimary: white;
+    --FontColor: hsl(225, 20%, 20%);
+    --FontHeaderColor: black;
+    --AccentColor: hsl(9, 83%, 58%);
+    
+}
+
+.cursive {
+    font-family: 'Hurricane', cursive;
+}
+.courier {
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --navHeight: 50px;
+    background: var(--BackgroundPrimary);
+    color: var(--FontColor);
+    font-family: 'Roboto', sans-serif;
+    transition: .6s;
+}
+
+.bigHeader {
+    color: var(--FontHeaderColor);
+    font-size: clamp(40px, 8vw, 80px);
+    transition: .6s;
+    margin: 0;
+}
+.header {
+    margin: 0;
+    color: var(--FontHeaderColor);
+    font-size: clamp(30px, 6vw, 70px);
+    transition: 0.6s;
+    border-bottom: 2px solid var(--AccentColor);
+    
+}
+.subHeader {
+    color: var(--FontHeaderColor);
+    font-size: clamp(20px, 4vw, 60px);
+}
+
+.accentColor {
+    color: var(--AccentColor);
+}
+
+
+nav {
+    height: var(--navHeight);
+    width: 100%;
+    background: var(--BackgroundPrimary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: transform 0.3s;
+}
+nav div, nav span {
+    cursor: pointer;
+}
+.navHidden {
+    transform: translateY(calc(-1 * var(--navHeight)));
+}
+#content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content section {
+    margin: 0px 15px;
+    padding: 100px 0px;
+    max-width: 650px;
+
+}
+
+#hero {
+    height: calc(100vh - 200px);
+}
+#hero h2 {
+    margin: 5px 0px;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactLinks a {
+    color: var(--AccentColor);
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Animations*/
+@keyframes slideUp {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
