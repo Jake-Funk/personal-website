@@ -95,6 +95,28 @@ nav div, nav span {
     margin: 5px 0px;
 }
 
+#ctaBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 2vw;
+    border: 1px solid var(--AccentColor);
+    cursor: pointer;
+    transition: .4s;
+}
+#ctaBtn span {
+    transition: .3s;
+}
+#ctaBtn:hover {
+    background: var(--AccentColor);
+    color: var(--FontHeaderColor);
+
+}
+#ctaBtn:hover span{
+    transform: rotate(90deg);
+}
+
 .contactLinks {
     display: flex;
     flex-direction: column;
@@ -102,8 +124,22 @@ nav div, nav span {
 }
 .contactLinks a {
     color: var(--AccentColor);
-    margin: 10px 0px;
+    margin: 15px;
     font-size: 18px;
+}
+.contactMethod {
+    width: 75%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.methodIcon {
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+.darkTheme .methodIcon {
+    filter: invert(1);
 }
 
 p {

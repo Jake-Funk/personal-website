@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
     } else {
         navbar.classList.remove("navHidden")
     }
-    
+
     lastScrollY = window.scrollY
 })
 
@@ -17,6 +17,7 @@ window.addEventListener("scroll", () => {
 const aboutBtn = document.getElementById("aboutBtn")
 const projectBtn = document.getElementById("projectBtn")
 const contactBtn = document.getElementById("contactBtn")
+const ctaBtn = document.getElementById("ctaBtn")
 
 const pageSections = [...document.getElementsByTagName("section")]
 const scrollIntoViewOptions = {
@@ -35,7 +36,7 @@ const gotoContact = () => {
 aboutBtn.addEventListener("click", gotoAbout)
 projectBtn.addEventListener("click", gotoProjects)
 contactBtn.addEventListener("click", gotoContact)
-
+ctaBtn.addEventListener("click", gotoProjects)
 
 // script for the dark mode toggle button
 const themeSwitch = document.getElementById("themeToggle")
