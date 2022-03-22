@@ -21,6 +21,9 @@
 .courier {
     font-family: 'Courier Prime', monospace;
 }
+.accentColor {
+    color: var(--AccentColor);
+}
 
 body {
     margin: 0;
@@ -30,6 +33,7 @@ body {
     color: var(--FontColor);
     font-family: 'Roboto', sans-serif;
     transition: .6s;
+    z-index: 1;
 }
 
 .bigHeader {
@@ -51,9 +55,6 @@ body {
     font-size: clamp(20px, 4vw, 60px);
 }
 
-.accentColor {
-    color: var(--AccentColor);
-}
 
 
 nav {
@@ -81,6 +82,7 @@ nav div, nav span {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 #content section {
     margin: 0px 15px;
@@ -88,12 +90,34 @@ nav div, nav span {
     max-width: 650px;
 
 }
-
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+}
 #hero {
     height: calc(100vh - 200px);
 }
 #hero h2 {
-    margin: 5px 0px;
+    margin: 0;
+    padding: 5px 0px;
+}
+#hero h3 {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+#hero p {
+    margin: 0;
+    padding: 20px 0;
+}
+#hero * {
+    background: var(--BackgroundPrimary);
+    box-shadow: 0 0 10px 10px var(--BackgroundPrimary);
+    width: fit-content;
+    border-radius: 5px;
+    transition: .6s;
+    padding-left: 5px;
 }
 
 #ctaBtn {
@@ -105,10 +129,12 @@ nav div, nav span {
     border: 1px solid var(--AccentColor);
     cursor: pointer;
     user-select: none;
-    transition: .4s;
 }
 #ctaBtn span {
-    transition: .3s;
+    transition: .4s;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0);
+
 }
 #ctaBtn:hover {
     background: var(--AccentColor);
@@ -117,6 +143,10 @@ nav div, nav span {
 }
 #ctaBtn:hover span{
     transform: rotate(90deg);
+}
+
+#aboutMe {
+    box-shadow: 0 0 10px 10px var(--BackgroundPrimary);
 }
 
 .contactLinks {
