@@ -71,6 +71,7 @@ nav {
 }
 nav div, nav span {
     cursor: pointer;
+    user-select: none;
 }
 .navHidden {
     transform: translateY(calc(-1 * var(--navHeight)));
@@ -103,6 +104,7 @@ nav div, nav span {
     padding: 2vw;
     border: 1px solid var(--AccentColor);
     cursor: pointer;
+    user-select: none;
     transition: .4s;
 }
 #ctaBtn span {
