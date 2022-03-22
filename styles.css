@@ -92,12 +92,12 @@ nav div, nav span {
 }
 #particles-js {
     position: absolute;
-    height: 100%;
+    height: calc(100% - 50px);
     width: 100%;
     z-index: -999;
 }
 #hero {
-    height: calc(100vh - 200px);
+    height: max(350px, 100vh - 250px);
 }
 
 #hero h2 {
