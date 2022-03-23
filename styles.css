@@ -2,6 +2,7 @@
 
 .darkTheme {
     --BackgroundPrimary: hsl(250, 13%, 9%);
+    --BackgroundSecondary: hsl(250, 13%, 13%);
     --FontColor: hsl(194, 20%, 70%);
     --FontHeaderColor: hsl(0, 0%, 100%);
     --AccentColor: hsl(136, 36%, 47%);
@@ -9,21 +10,13 @@
 
 .lightTheme {
     --BackgroundPrimary: white;
+    --BackgroundSecondary: hsl(0, 0%, 95%);
     --FontColor: hsl(225, 20%, 20%);
     --FontHeaderColor: black;
     --AccentColor: hsl(9, 83%, 58%);
     
 }
 
-.cursive {
-    font-family: 'Hurricane', cursive;
-}
-.courier {
-    font-family: 'Courier Prime', monospace;
-}
-.accentColor {
-    color: var(--AccentColor);
-}
 
 body {
     margin: 0;
@@ -36,6 +29,16 @@ body {
     z-index: 1;
 }
 
+/*generic classes*/
+.cursive {
+    font-family: 'Hurricane', cursive;
+}
+.courier {
+    font-family: 'Courier Prime', monospace;
+}
+.accentColor {
+    color: var(--AccentColor);
+}
 .bigHeader {
     color: var(--FontHeaderColor);
     font-size: clamp(40px, 8vw, 80px);
@@ -56,7 +59,7 @@ body {
 }
 
 
-
+/*Navbar styles*/ 
 nav {
     height: var(--navHeight);
     width: 100%;
@@ -81,6 +84,8 @@ nav div:hover, nav span:hover {
 .navHidden {
     transform: translateY(calc(-1 * var(--navHeight)));
 }
+
+/*content area styles*/
 #content {
     padding-top: 50px;
     display: flex;
@@ -163,6 +168,31 @@ nav div:hover, nav span:hover {
 }
 
 
+/*About me Section styles*/
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: clamp( 150px ,15vw, 185px);
+    margin: 10px;
+    border-radius: 5px;
+    background: var(--BackgroundSecondary);
+    transition: .6s;
+}
+.skillCard img {
+    height: 100px;
+    width: 100px;
+}
+
+/*Contact Section styles*/
 .contactLinks {
     display: flex;
     flex-direction: column;
