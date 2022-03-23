@@ -94,6 +94,8 @@ nav div:hover, nav span:hover {
     max-width: 650px;
 
 }
+
+/*particle container*/
 #particles-js {
     position: absolute;
     height: calc(100% - 50px);
@@ -101,7 +103,7 @@ nav div:hover, nav span:hover {
     z-index: -999;
 }
 
-
+/*Hero section styles*/
 #hero {
     height: max(350px, 100vh - 250px);
 }
@@ -134,17 +136,22 @@ nav div:hover, nav span:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1vh 5vw;
+    padding: .5vh 4vw;
     font-size: 20px;
-    border: 1px solid var(--AccentColor);
+    border: 3px solid var(--AccentColor);
     cursor: pointer;
     user-select: none;
 }
+#ctaBtn div {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    animation: bounce 10s ease-out 3s infinite;
+}
+
 #ctaBtn span {
     transition: .4s;
     box-shadow: none;
     background: rgba(0, 0, 0, 0);
-
 }
 #ctaBtn:hover {
     background: var(--AccentColor);
@@ -154,7 +161,6 @@ nav div:hover, nav span:hover {
 #ctaBtn:hover span{
     transform: rotate(90deg);
 }
-
 
 
 .contactLinks {
@@ -195,5 +201,21 @@ p {
     100% {
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    
+    5%, 15% {
+        transform: translateY(-3px);
+    }
+    10% {
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
