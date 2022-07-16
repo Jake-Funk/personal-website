@@ -1543,7 +1543,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 const greenParticles = {
   "particles": {
     "number": {
-      "value": 25,
+      "value": 35,
       "density": {
         "enable": false,
         "value_area": 800
@@ -1559,7 +1559,7 @@ const greenParticles = {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -1596,7 +1596,7 @@ const greenParticles = {
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": .5,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -1653,7 +1653,7 @@ const greenParticles = {
 const redParticles = {
   "particles": {
     "number": {
-      "value": 25,
+      "value": 35,
       "density": {
         "enable": false,
         "value_area": 800
@@ -1669,7 +1669,7 @@ const redParticles = {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -1692,7 +1692,7 @@ const redParticles = {
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 80,
+        "speed": 60,
         "size_min": 0.1,
         "sync": false
       }
@@ -1706,7 +1706,7 @@ const redParticles = {
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": .5,
       "direction": "none",
       "random": false,
       "straight": false,
