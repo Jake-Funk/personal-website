@@ -181,6 +181,14 @@ nav div:hover, nav span:hover {
     width: 100px;
 }
 
+/* Projects Section styles*/
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
 /*Contact Section styles*/
 .contactLinks {
     display: flex;
