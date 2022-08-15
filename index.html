@@ -48,11 +48,15 @@
         <section id="aboutMe">
             <h2 class="header">About Me</h2>
             <p>I am currently finishing my degree in Bioinformatics and Computational Biology at the University of Maryland, Baltimore County.</p>
-            <p>Learning new things is a massive passion of mine, and I love staying up to date with the latest technology
-                trends. My main goal as a developer is to help build projects that have an impact. I want to
+            <p>
+                Learning new things is one of my biggest passions, so I love staying up to date with the latest technology
+                trends.
+            </p>
+            <p>
+                As a developer, my main goal is to build projects that have a positive impact. I want to
                 be a part of a team that is creating tools that are helping the world
-                become more efficent, safe, inclusive, and connected. 
-                </p>
+                become more efficient, safe, inclusive, and connected. 
+            </p>
             <h3 class="subHeader">Skills</h3>
             <div class="skillsContainer">
                 <div class="skillCard">
@@ -84,12 +88,12 @@
         </section>
         <section id="projects">
             <h2 class="header">Projects</h2>
-            <p>Please take a look at some of the cool things I've built and worked on. Some of these projects were an individual endeavor, but some of them are the result of some awesome teamwork!</p>
+            <p>Please, feel free to take a look at some of the cool things I've built and developed.</p>
 
             <div>
-                <h2>PlanGex</h2>
+                <h2 class="headerColor">PlanGex</h2>
                 <p>
-                    PlanGex is a genetic database review application I built for the Lobo Lab at the University of Maryland, Baltimore County. Plangex uses a REST API and a simplistic frontend to help lab members search through, sort, and organize data from our planarian worm genetics database.
+                    PlanGex is a genetic database CRUD application I built while volunteering as a research assistant and developer for UMBC's Lobo Lab. Plangex uses a REST API and a simplistic frontend to help lab members search through, sort, and organize data from our planarian worm genetics database.
                 </p>
                 <p>
                     Users can find recent publications that mention specific genes, as well as view
@@ -98,7 +102,7 @@
                 <p>
                     <strong>Built Using:</strong> React, MUI components, Node, Express, SQLite
                 </p>
-                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
                     <div class="carousel-cell">
                         <img width="100%" src="projectIMGs/planGexHomePageSS.png">
                     </div>
@@ -110,6 +114,31 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <h2 class="headerColor" style="margin-top: 40px;">Breast Cancer Diagnosis Predictor</h2>
+                <p>
+                    Using the machine-learning and data science libraries SciKit-Learn and XGBoost, I trained several classifier models on UCI's Wisconsin breast cancer diagnosis dataset in order to compare their accuracies for predicting a diagnosis.
+                </p>
+                <p>
+                    I used Seaborn and Matplotlib to create modern histograms of this dataset's feature distributions, as well as box-plots for comparing model performance. After determining that my XGBoost classifier was the most accurate, I tuned the model's hyperparameters for further optimization, resulting in a model with over 97% accuracy and over 95% precision (cross-validated over 6 folds).
+                </p>
+                <p>
+                    <strong>Built Using:</strong> Python, SciKit-Learn, XGBoost, Seaborn, Matplotlib
+                </p>
+                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                    <div class="carousel-cell">
+                        <img width="100%" src="projectIMGs/some_subplots.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img width="100%" src="projectIMGs/area_mean_histogram.png">
+                    </div>
+                    <div class="carousel-cell">
+                        <img width="100%" src="projectIMGs/fractal_dimension_mean_histogram.png">
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section id="contact">
             <h2 class="header">Let's Connect</h2>

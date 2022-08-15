@@ -58,6 +58,10 @@ body {
     font-size: clamp(20px, 4vw, 60px);
 }
 
+.headerColor {
+    color: var(--FontHeaderColor)
+}
+
 
 /*Navbar styles*/ 
 nav {
