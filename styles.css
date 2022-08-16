@@ -76,6 +76,7 @@ nav {
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     transition: transform 0.3s;
+    z-index: 999;
 }
 nav div, nav span {
     cursor: pointer;
